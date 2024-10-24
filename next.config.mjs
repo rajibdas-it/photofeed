@@ -10,6 +10,14 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'i.pravatar.cc',
             },
+            {
+                protocol: 'https',
+                hostname: 'unsplash.com',
+            },
+            {
+                protocol: 'https',
+                hostname: 'tinyurl.com',
+            },
         ],
     },
 };

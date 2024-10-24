@@ -3,16 +3,19 @@
 import { createPortal } from "react-dom";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-
+import { useRouter } from "next/navigation";
 const Modal = ({ children }) => {
   const modalRef = useRef(null);
+  const router = useRouter();
   useEffect(() => {
     if (!modalRef.current?.open) {
       modalRef.current.showModal();
     }
   }, []);
 
-  const onHide = () => {};
+  const onHide = () => {
+    router.back();
+  };
 
   return createPortal(
     <dialog
