@@ -68,7 +68,7 @@ const PhotoDetails = async ({ id, lang }) => {
                 <div className="spacy-y-3">
                   <h6 className="lg:text-lg font-bold">{photo.author.name}</h6>
                   <p className="text-black/60 text-xs lg:text-sm">
-                    {photo.author.followers}Followers
+                    {photo.author.followers} {dictionary.followers}
                   </p>
                 </div>
               </div>
